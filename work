@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hengjun Lu | Work</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <h1>Experience</h1>
+        <p>Work Experience</p>
+      </div>
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="personal.html">Personal</a>
+        <a href="education.html">Education</a>
+        <a class="active" href="experience.html">Experience</a>
+        <a href="publications.html">Publications</a>
+      </div>
+    </div>
+
+    <!-- Experience Item 1 -->
+    <div class="card">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; gap:16px;">
+        <div style="font-weight:700; font-size:18px;">
+          Company Name (Role Title)
+        </div>
+        <div class="small" style="font-style:italic; white-space:nowrap;">
+          MM YYYY – MM YYYY
+        </div>
+      </div>
+
+      <div class="small" style="margin-top:6px;">
+        Location: City, Country/State
+      </div>
+
+      <ul style="margin-top:10px;">
+        <li>Responsibility/achievement #1 (quantify results if possible).</li>
+        <li>Responsibility/achievement #2.</li>
+        <li>Responsibility/achievement #3.</li>
+      </ul>
+    </div>
+
+    <!-- Experience Item 2 -->
+    <div class="card">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; gap:16px;">
+        <div style="font-weight:700; font-size:18px;">
+          Company Name (Role Title)
+        </div>
+        <div class="small" style="font-style:italic; white-space:nowrap;">
+          MM YYYY – MM YYYY
+        </div>
+      </div>
+
+      <div class="small" style="margin-top:6px;">
+        Location: City, Country/State
+      </div>
+
+      <ul style="margin-top:10px;">
+        <li>Responsibility/achievement #1 (quantify results if possible).</li>
+        <li>Responsibility/achievement #2.</li>
+        <li>Responsibility/achievement #3.</li>
+      </ul>
+    </div>
+
+    <!-- Optional: Skills / Tools -->
+    <div class="card">
+      <h2>Tools & Skills</h2>
+      <p class="small" style="margin:0;">
+        Verilog/SystemVerilog · SDC/STA · Synopsys DC/PT · Cadence Innovus/Virtuoso · Python · C/C++ · TCL · Linux · Git
+      </p>
+    </div>
+
+    <div class="footer">© Hengjun Lu</div>
+  </div>
+</body>
+</html>
