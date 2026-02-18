@@ -11,7 +11,6 @@
     <div class="header">
       <div class="brand">
         <h1>Experience</h1>
-       
       </div>
       <div class="nav">
         <a href="index.html">Home</a>
@@ -22,127 +21,141 @@
       </div>
     </div>
 
-   <!-- Experience Item -->
-<div class="card">
-  <div style="display:flex; justify-content:space-between; align-items:baseline; gap:16px;">
-    <div style="font-weight:700; font-size:18px;">
-      University of Southern California - EE577B Project
+    <!-- Experience Item 1 (with left image slot) -->
+    <div class="card" style="display:flex; gap:22px; align-items:flex-start;">
+      <!-- Left image slot -->
+      <div style="flex:0 0 90px;">
+        <img src="assets/images/usc3.jpg" alt="NoC Project"
+             style="width:90px; height:90px; object-fit:cover; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.12);">
+      </div>
+
+      <!-- Content -->
+      <div style="flex:1; min-width:0;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:16px;">
+          <div style="font-weight:700; font-size:18px;">
+            University of Southern California - EE577B Project
+          </div>
+          <div class="small" style="font-style:italic; white-space:nowrap;">
+            Aug 2025 – Dec 2025
+          </div>
+        </div>
+
+        <div class="small" style="margin-top:6px;">
+          Location: Los Angeles, CA
+        </div>
+
+        <div style="margin-top:14px; font-weight:600;">
+          Bidirectional Mesh NoC and 64-bit Pipelined Processor SoC Design
+        </div>
+
+        <ul style="margin-top:8px;">
+          <li>
+            Architected a bidirectional mesh NoC with dual virtual channels and deadlock-free arbitration,
+            and designed a synthesizable 64-bit four-stage pipelined processor with hazard detection and branch handling.
+            Integrated NIC-based memory-mapped communication and assembled four CPU–Router nodes into a multi-core SoC.
+          </li>
+
+          <li>
+            Executed the complete backend implementation flow, including RTL synthesis using Synopsys Design Compiler and
+            floorplanning, placement and routing, CTS, routing optimization using Cadence Innovus,
+            and verification through DRC and LVS.
+          </li>
+
+          <li>
+            Built comprehensive SystemVerilog testbenches to verify router functionality and ensure end-to-end data transmission correctness.
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="small" style="font-style:italic; white-space:nowrap;">
-      Aug 2025 – Dec 2025
+
+    <!-- Experience Item 2 (with left image slot) -->
+    <div class="card" style="display:flex; gap:22px; align-items:flex-start;">
+      <div style="flex:0 0 90px;">
+        <img src="assets/images/usc3.jpg" alt="High Voltage Control"
+             style="width:90px; height:90px; object-fit:cover; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.12);">
+      </div>
+
+      <div style="flex:1; min-width:0;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:16px;">
+          <div style="font-weight:700; font-size:18px;">
+            University of Southern California – Research Assistant
+          </div>
+          <div class="small" style="font-style:italic; white-space:nowrap;">
+            Jan 2025 – Present
+          </div>
+        </div>
+
+        <div class="small" style="margin-top:6px;">
+          Location: Los Angeles, CA
+        </div>
+
+        <div style="margin-top:14px; font-weight:600;">
+          High-Voltage Electronic Control System for Flexible Metal Electrostatic Adhesion
+        </div>
+
+        <ul style="margin-top:8px;">
+          <li>
+            Designed and implemented a fully integrated PCB system, in conjunction with an Arduino-based controller,
+            to generate and route programmable high-voltage control signals for large-scale electrostatic adhesion systems.
+          </li>
+
+          <li>
+            Integrated AQY280S solid-state relays together with ADG412 and MAX4664 transmission-gate switches to achieve low-leakage,
+            high-reliability switching of voltages up to 320 V, ensuring enhanced operational safety, signal integrity, and scalability.
+          </li>
+
+          <li>
+            Realized bidirectional programmable adhesion and detachment with precise temporal coordination
+            (&lt; 2 ms switching intervals), enabling dynamic control of soft robotic interfaces and high-voltage multiplexed channels.
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <div class="small" style="margin-top:6px;">
-    Location: Los Angeles, CA
-  </div>
+    <!-- Experience Item 3 (with left image slot) -->
+    <div class="card" style="display:flex; gap:22px; align-items:flex-start;">
+      <div style="flex:0 0 90px;">
+        <img src="assets/images/zhong.jpg" alt="FPGA LPR"
+             style="width:90px; height:90px; object-fit:cover; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.12);">
+      </div>
 
-  <!-- 项目标题 -->
-  <div style="margin-top:14px; font-weight:600;">
-    Bidirectional Mesh NoC and 64-bit Pipelined Processor SoC Design
-  </div>
+      <div style="flex:1; min-width:0;">
+        <div style="display:flex; justify-content:space-between; align-items:baseline; gap:16px;">
+          <div style="font-weight:700; font-size:18px;">
+            China Railway Construction Development Group – Hardware Intern
+          </div>
+          <div class="small" style="font-style:italic; white-space:nowrap;">
+            Jan 2022 – Mar 2022
+          </div>
+        </div>
 
-  <!-- 项目内容 -->
-  <ul style="margin-top:8px;">
-    <li>
-  Architected a bidirectional mesh NoC with dual virtual channels and deadlock-free arbitration, 
-  and designed a synthesizable 64-bit four-stage pipelined processor with hazard detection and branch handling. 
-  Integrated NIC-based memory-mapped communication and assembled four CPU–Router nodes into a multi-core SoC.
-</li>
+        <div class="small" style="margin-top:6px;">
+          Location: China
+        </div>
 
-    <li>
-      Executed the complete backend implementation flow, including RTL synthesis using Synopsys Design Compiler and  
-      floorplanning, placement and routing, CTS, routing optimization using Cadence Innovous, 
-      and verification through DRC and LVS.
-    </li>
+        <div style="margin-top:14px; font-weight:600;">
+          FPGA-Based Real-Time License Plate Recognition System
+        </div>
 
-    <li>
-      Built comprehensive SystemVerilog testbenches to verify router functionality and ensure end-to-end data transmission correctness.
-    </li>
-  </ul>
-</div>
+        <ul style="margin-top:8px;">
+          <li>
+            Designed Verilog-based image preprocessing RTL modules, including Sobel edge detection
+            and smoothing filters, and deployed them on FPGA for accelerated feature extraction.
+          </li>
 
+          <li>
+            Integrated YOLOv5 and CRNN models for license plate localization and character recognition,
+            and combined ResNet with custom hardware logic to achieve precise vehicle color classification.
+          </li>
 
-   <!-- Experience Item 2 -->
-<div class="card">
-  <div style="display:flex; justify-content:space-between; align-items:baseline; gap:16px;">
-    <div style="font-weight:700; font-size:18px;">
-      University of Southern California – Research Assistant
+          <li>
+            Achieved sub-second system latency (&lt; 0.8 s) with an overall recognition accuracy of 97%
+            for license plate digits and vehicle color, significantly improving real-time information
+            extraction for moving vehicles.
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="small" style="font-style:italic; white-space:nowrap;">
-      Jan 2025 – Present
-    </div>
-  </div>
-
-  <div class="small" style="margin-top:6px;">
-    Location: Los Angeles, CA
-  </div>
-
-  <!-- 项目标题（单独一行，不带 bullet） -->
-  <div style="margin-top:14px; font-weight:600;">
-    High-Voltage Electronic Control System for Flexible Metal Electrostatic Adhesion
-  </div>
-
-  <!-- 项目内容 -->
-  <ul style="margin-top:8px;">
-    <li>
-      Designed and implemented a fully integrated PCB system, in conjunction with an Arduino-based controller, 
-      to generate and route programmable high-voltage control signals for large-scale electrostatic adhesion systems.
-    </li>
-
-    <li>
-      Integrated AQY280S solid-state relays together with ADG412 and MAX4664 transmission-gate switches to achieve low-leakage, 
-      high-reliability switching of voltages up to 320 V, ensuring enhanced operational safety, signal integrity, and scalability.
-    </li>
-
-    <li>
-      Realized bidirectional programmable adhesion and detachment with precise temporal coordination 
-      (&lt; 2 ms switching intervals), enabling dynamic control of soft robotic interfaces and high-voltage multiplexed channels.
-    </li>
-  </ul>
-</div>
-
-   <!-- Experience Item -->
-<div class="card">
-  <div style="display:flex; justify-content:space-between; align-items:baseline; gap:16px;">
-    <div style="font-weight:700; font-size:18px;">
-      China Railway Construction Development Group – Hardware Intern
-    </div>
-    <div class="small" style="font-style:italic; white-space:nowrap;">
-      Jan 2022 – Mar 2022
-    </div>
-  </div>
-
-  <div class="small" style="margin-top:6px;">
-    Location: China
-  </div>
-
-  <!-- 项目标题 -->
-  <div style="margin-top:14px; font-weight:600;">
-    FPGA-Based Real-Time License Plate Recognition System
-  </div>
-
-  <!-- 项目内容 -->
-  <ul style="margin-top:8px;">
-    <li>
-      Designed Verilog-based image preprocessing RTL modules, including Sobel edge detection 
-      and smoothing filters, and deployed them on FPGA for accelerated feature extraction.
-    </li>
-
-    <li>
-      Integrated YOLOv5 and CRNN models for license plate localization and character recognition, 
-      and combined ResNet with custom hardware logic to achieve precise vehicle color classification.
-    </li>
-
-    <li>
-      Achieved sub-second system latency (&lt; 0.8 s) with an overall recognition accuracy of 97% 
-      for license plate digits and vehicle color, significantly improving real-time information 
-      extraction for moving vehicles.
-    </li>
-  </ul>
-</div>
-
-
 
     <!-- Optional: Skills / Tools -->
     <div class="card">
