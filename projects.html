@@ -23,69 +23,179 @@
       </div>
     </div>
 
-    <!-- ================= Projects ================= -->
+    <!-- ================= Project 1 ================= -->
     <div class="card">
-      <h2>Selected Projects</h2>
 
-      <div class="proj">
-        <h3>Bidirectional Mesh NoC with Pipelined Processor</h3>
-        <p class="small">2025.08 – 2025.12</p>
-        <ul>
-          <li>Designed a bidirectional mesh NoC router with dual VCs, virtual cut-through, and rotating arbitration (deadlock-free).</li>
-          <li>Built a 64-bit 4-stage pipelined processor with hazard detection, forwarding, and low-latency branch resolution.</li>
-          <li>Implemented a memory-mapped NIC and integrated 4 CPU–NIC–Router nodes into a multicore SoC.</li>
-          <li>Completed RTL-to-GDS flow (DC + Innovus): synthesis, floorplan, PnR, CTS, timing closure; verified with SV testbench.</li>
-        </ul>
+      <div style="display:flex; justify-content:space-between; align-items:baseline;">
+        <div style="font-weight:700; font-size:18px;">
+          Bidirectional Mesh NoC with Pipelined Processor
+        </div>
+        <div class="small" style="font-style:italic;">
+          Aug 2025 – Present
+        </div>
       </div>
 
-      <div class="proj">
-        <h3>Custom 512-bit SRAM Design & Optimization</h3>
-        <p class="small">2025.02 – 2025.06</p>
-        <ul>
-          <li>Implemented SRAM from RTL functional model to transistor-level schematic (decoder, R/W control, timing).</li>
-          <li>Optimized sizing in Spectre for stability and power; achieved Read SNM &gt; 220 mV, Write SNM &gt; 400 mV.</li>
-          <li>Created compact layout in Virtuoso with SKILL automation + manual optimization of peripheral circuits.</li>
-        </ul>
+      <div class="small" style="margin-top:6px;">
+        Focus: NoC Router + 64-bit Pipelined CPU + Multicore SoC Integration
       </div>
 
-      <div class="proj">
-        <h3>16-PE Systolic Array for Matrix Multiplication</h3>
-        <p class="small">2024.09 – 2024.12</p>
-        <ul>
-          <li>Designed a pipelined MAC (8-bit mul + 10-bit add) and scaled into a 16-PE systolic array accelerator.</li>
-          <li>Ran synthesis with SDC (Synopsys DC) and completed PnR/CTS/timing closure in Innovus.</li>
-          <li>Achieved stable 512 MHz via buffer insertion/resizing and applied clock gating for balanced PPA.</li>
-        </ul>
+    
+
+      <div style="display:flex; gap:0px; margin-top:14px; align-items:center;">
+        <div style="flex:0 0 75px;">
+          <img src="assets/images/usc3.jpg"
+               style="width:75px; height:75px; object-fit:cover; border-radius:5px;">
+        </div>
+
+        <div style="flex:1;">
+          <ul style="margin:0;">
+            <li>
+              Designed a bidirectional mesh NoC router with dual virtual channels, virtual cut-through switching,
+              and dynamic rotating arbitration for deadlock-free concurrent traffic.
+            </li>
+            <li>
+              Built a 64-bit 4-stage pipelined processor with hazard detection, data forwarding,
+              and low-latency branch resolution logic.
+            </li>
+            <li>
+              Implemented a memory-mapped NIC and integrated 4 CPU–NIC–Router nodes into a multicore SoC system.
+            </li>
+            <li>
+              Completed RTL-to-GDS flow (Synopsys DC + Cadence Innovus): synthesis, floorplan, PnR, CTS,
+              and timing closure; verified with SystemVerilog testbench.
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="proj">
-        <h3>Architecture Simulation & Design Space Exploration</h3>
-        <p class="small">2025.02 – 2025.06</p>
-        <ul>
-          <li>Evaluated branch predictors using Intel Pin; compared accuracy/performance tradeoffs.</li>
-          <li>Explored gem5 microarchitecture parameters (issue width, execution units, caches, DRAM) under area constraints.</li>
-          <li>Profiled GEMM workloads in GPGPU-sim; studied tile size and memory layout impact on IPC and stalls.</li>
-        </ul>
-      </div>
     </div>
 
-    <!-- ================= Skills ================= -->
+    <!-- ================= Project 2 ================= -->
     <div class="card">
-      <h2>Skills</h2>
 
-      <h3>HDL & Programming</h3>
-      <p>Verilog, VHDL, C/C++, Python</p>
+      <div style="display:flex; justify-content:space-between; align-items:baseline;">
+        <div style="font-weight:700; font-size:18px;">
+          Custom 512-bit SRAM Design & Optimization
+        </div>
+        <div class="small" style="font-style:italic;">
+          Feb 2025 – Jun 2025
+        </div>
+      </div>
 
-      <h3>EDA / VLSI Tools</h3>
-      <p>Synopsys Design Compiler, PrimeTime; Cadence Innovus, Virtuoso, Spectre; Calibre, HSPICE, SimVision</p>
+      <div class="small" style="margin-top:6px;">
+        Focus: SRAM Peripheral Design + Transistor-Level Schematic + Layout Optimization
+      </div>
 
-      <h3>Architecture & Simulation</h3>
-      <p>Intel Pin, gem5, GPGPU-sim</p>
+    
+      <div style="display:flex; gap:0px; margin-top:14px; align-items:center;">
+        <div style="flex:0 0 75px;">
+          <img src="assets/images/usc3.jpg"
+               style="width:75px; height:75px; object-fit:cover; border-radius:5px;">
+        </div>
 
-      <h3>Other</h3>
-      <p>KiCad, MATLAB, ModelSim, Arduino, LabVIEW</p>
+        <div style="flex:1;">
+          <ul style="margin:0;">
+            <li>
+              Implemented SRAM from RTL functional model to transistor-level schematic,
+              including address decoder, read/write control, and timing paths.
+            </li>
+            <li>
+              Optimized device sizing in Spectre to improve stability and reduce power,
+              achieving Read SNM &gt; 220 mV and Write SNM &gt; 400 mV.
+            </li>
+            <li>
+              Built compact layout in Cadence Virtuoso with SKILL automation plus manual refinement
+              for dense peripheral circuitry.
+            </li>
+          </ul>
+        </div>
+      </div>
+
     </div>
 
+    <!-- ================= Project 3 ================= -->
+    <div class="card">
+
+      <div style="display:flex; justify-content:space-between; align-items:baseline;">
+        <div style="font-weight:700; font-size:18px;">
+          16-PE Systolic Array for Matrix Multiplication
+        </div>
+        <div class="small" style="font-style:italic;">
+          Sep 2024 – Dec 2024
+        </div>
+      </div>
+
+      <div class="small" style="margin-top:6px;">
+        Focus: Pipelined MAC + PE Design + RTL-to-GDS Physical Implementation
+      </div>
+
+     
+
+      <div style="display:flex; gap:0px; margin-top:14px; align-items:center;">
+        <div style="flex:0 0 75px;">
+          <img src="assets/images/usc3.jpg"
+               style="width:75px; height:75px; object-fit:cover; border-radius:5px;">
+        </div>
+
+        <div style="flex:1;">
+          <ul style="margin:0;">
+            <li>
+              Designed a pipelined MAC block (8-bit multiplier + 10-bit adder) and scaled it into a 16-PE systolic array.
+            </li>
+            <li>
+              Ran logic synthesis with SDC constraints (Synopsys DC) and completed PnR/CTS in Cadence Innovus.
+            </li>
+            <li>
+              Achieved stable 512 MHz via buffer insertion and resizing, and applied clock gating strategies for balanced PPA.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ================= Project 4 ================= -->
+    <div class="card">
+
+      <div style="display:flex; justify-content:space-between; align-items:baseline;">
+        <div style="font-weight:700; font-size:18px;">
+          Architecture Simulation & Design Space Exploration
+        </div>
+        <div class="small" style="font-style:italic;">
+          Feb 2025 – Jun 2025
+        </div>
+      </div>
+
+      <div class="small" style="margin-top:6px;">
+        Focus: Branch Prediction + gem5 DSE + GPU GEMM Profiling
+      </div>
+
+     
+
+      <div style="display:flex; gap:0px; margin-top:14px; align-items:center;">
+        <div style="flex:0 0 75px;">
+          <img src="assets/images/usc3.jpg"
+               style="width:75px; height:75px; object-fit:cover; border-radius:5px;">
+        </div>
+
+        <div style="flex:1;">
+          <ul style="margin:0;">
+            <li>
+              Implemented and evaluated multiple branch predictors using Intel Pin to compare accuracy/performance tradeoffs.
+            </li>
+            <li>
+              Explored microarchitecture parameters in gem5 (issue width, execution units, caches, DRAM) under area constraints.
+            </li>
+            <li>
+              Profiled GEMM workloads in GPGPU-sim, analyzing tile size and memory layout impact on IPC and stalls.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">© Hengjun Lu</div>
   </div>
 </body>
 </html>
