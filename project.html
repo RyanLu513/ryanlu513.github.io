@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hengjun Lu | Projects</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <div class="brand">
+        <h1>Projects</h1>
+      </div>
+      <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="experience.html">Experience</a>
+        <a class="active" href="projects.html">Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="personal.html">Personal</a>
+      </div>
+    </div>
+
+    <!-- ================= Projects ================= -->
+    <div class="card">
+      <h2>Selected Projects</h2>
+
+      <div class="proj">
+        <h3>Bidirectional Mesh NoC with Pipelined Processor</h3>
+        <p class="small">2025.08 – Present</p>
+        <ul>
+          <li>Designed a bidirectional mesh NoC router with dual VCs, virtual cut-through, and rotating arbitration (deadlock-free).</li>
+          <li>Built a 64-bit 4-stage pipelined processor with hazard detection, forwarding, and low-latency branch resolution.</li>
+          <li>Implemented a memory-mapped NIC and integrated 4 CPU–NIC–Router nodes into a multicore SoC.</li>
+          <li>Completed RTL-to-GDS flow (DC + Innovus): synthesis, floorplan, PnR, CTS, timing closure; verified with SV testbench.</li>
+        </ul>
+      </div>
+
+      <div class="proj">
+        <h3>Custom 512-bit SRAM Design & Optimization</h3>
+        <p class="small">2025.02 – 2025.06</p>
+        <ul>
+          <li>Implemented SRAM from RTL functional model to transistor-level schematic (decoder, R/W control, timing).</li>
+          <li>Optimized sizing in Spectre for stability and power; achieved Read SNM &gt; 220 mV, Write SNM &gt; 400 mV.</li>
+          <li>Created compact layout in Virtuoso with SKILL automation + manual optimization of peripheral circuits.</li>
+        </ul>
+      </div>
+
+      <div class="proj">
+        <h3>16-PE Systolic Array for Matrix Multiplication</h3>
+        <p class="small">2024.09 – 2024.12</p>
+        <ul>
+          <li>Designed a pipelined MAC (8-bit mul + 10-bit add) and scaled into a 16-PE systolic array accelerator.</li>
+          <li>Ran synthesis with SDC (Synopsys DC) and completed PnR/CTS/timing closure in Innovus.</li>
+          <li>Achieved stable 512 MHz via buffer insertion/resizing and applied clock gating for balanced PPA.</li>
+        </ul>
+      </div>
+
+      <div class="proj">
+        <h3>Architecture Simulation & Design Space Exploration</h3>
+        <p class="small">2025.02 – 2025.06</p>
+        <ul>
+          <li>Evaluated branch predictors using Intel Pin; compared accuracy/performance tradeoffs.</li>
+          <li>Explored gem5 microarchitecture parameters (issue width, execution units, caches, DRAM) under area constraints.</li>
+          <li>Profiled GEMM workloads in GPGPU-sim; studied tile size and memory layout impact on IPC and stalls.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- ================= Skills ================= -->
+    <div class="card">
+      <h2>Skills</h2>
+
+      <h3>HDL & Programming</h3>
+      <p>Verilog, VHDL, RISC-V, C/C++, Python</p>
+
+      <h3>EDA / VLSI Tools</h3>
+      <p>Synopsys Design Compiler, PrimeTime; Cadence Innovus, Virtuoso, Spectre; Calibre, HSPICE, SimVision</p>
+
+      <h3>Architecture & Simulation</h3>
+      <p>Intel Pin, gem5, GPGPU-sim</p>
+
+      <h3>Other</h3>
+      <p>KiCad, MATLAB, ModelSim, Arduino, LabVIEW</p>
+    </div>
+
+  </div>
+</body>
+</html>
